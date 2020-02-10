@@ -11,7 +11,6 @@
     <head>
         <meta charset="UTF-8" />
         <title><?php print "opdracht 2.1"; ?></title>
-        <link href="css/style.css">
     </head>
     <body>
         <p><?php echo "Hello World" ?></p>
