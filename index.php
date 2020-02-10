@@ -13,7 +13,7 @@
         <title><?php print "pagina 1"; ?></title>
     </head>
     <body>
-        <<header>
+        <header>
             <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
         </header>
         <aside>
@@ -36,4 +36,3 @@
         </main>
     </body>
 </html>
-
