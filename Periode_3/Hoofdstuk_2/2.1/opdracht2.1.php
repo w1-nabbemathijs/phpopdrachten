@@ -14,6 +14,6 @@
         <link href="css/style.css">
     </head>
     <body>
-        <p><?php echo "Hello World!" ?></p>
+        <p><?php echo "Hello World" ?></p>
     </body>
 </html>
