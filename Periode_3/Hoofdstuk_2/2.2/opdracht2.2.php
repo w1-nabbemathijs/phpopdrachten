@@ -37,7 +37,9 @@ $text14 = "Vind je niet";
 </p>
 <h1><?php echo "Taak 3"; ?></h1>
 <p>
-    <?php echo ; ?>
+    <?php echo "$text1$text11$text12
+                $text8 toch dat $text5 zo'n makkelijke taal $text13$text10$text12
+                $text7$text10 $text14$text9"; ?>
 </p>
 </body>
 </html>
