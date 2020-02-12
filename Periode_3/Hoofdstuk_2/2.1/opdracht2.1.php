@@ -14,5 +14,6 @@
     </head>
     <body>
         <p><?php echo "Hello World" ?></p>
+    <a href="../../../index.php">Terug naar index.php</a>
     </body>
 </html>

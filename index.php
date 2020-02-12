@@ -30,6 +30,15 @@
                     </ul>
                 </li>
             </ul>
+            <ul>
+                <li>Hoofdstuk 3
+                    <ul>
+                        <li>
+                            <a href="Periode_3/Hoofdstuk_3/3.1/opdracht3.1.php">Opdracht 2.1</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <main id="wrapper">
             <h2>Uitwerkingen</h2>

@@ -41,5 +41,6 @@ $text14 = "Vind je niet";
                 $text8 toch dat $text5 zo'n makkelijke taal $text13$text10$text12
                 $text7$text10 $text14$text9"; ?>
 </p>
+<a href="../../../index.php">Terug naar index.php</a>
 </body>
 </html>
