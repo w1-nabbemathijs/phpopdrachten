@@ -9,6 +9,7 @@
 <?php
     $trafficLightColor = "groen";
     $ambulanceComing = false;
+    $driveOn = false;
 
     $countryName = "Nederland";
     $currentAge = 18;
@@ -24,11 +25,20 @@
             <?php
                 if($trafficLightColor == "groen" and $ambulanceComing == false)
                 {
-                    echo "U mag doorrijden";
+                    $driveOn = true;
                 }
                 else
                 {
-                    echo "U moet stoppen";
+                   $driveOn = false;
+                }
+
+                if($driveOn == true)
+                {
+                    echo "<span style='color: green'>U mag doorrijden</span>";
+                }
+                if($driveOn == false)
+                {
+                    echo "<span style='color: red'>U moet stoppen</span>";
                 }
             ?>
         </p>
