@@ -7,6 +7,6 @@
  */
 ?>
 
-<?php include "../../Includes/header.php"; ?>
+<?php include "../../../Includes/header.php"; ?>
 <p><?php echo "Hello World" ?></p>
-<?php include "../../Includes/footer.php"; ?>
+<?php include "../../../Includes/footer.php"; ?>
