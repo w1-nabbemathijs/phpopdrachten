@@ -25,7 +25,7 @@ $verhaal2 = "De " . $naam . " (Fries: " . $fries . ") is een " . $afstand . " ki
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title><?php print "opdracht 3.1"; ?></title>
+    <title><?php print "Mathijs Nabbe"; ?></title>
 </head>
 <body>
 <p><?php echo "$verhaal"; ?></p>

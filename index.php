@@ -44,7 +44,6 @@
             </ul>
         </aside>
         <main id="wrapper">
-            <h2>Uitwerkingen</h2>
         </main>
     </body>
 </html>
