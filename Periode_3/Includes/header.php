@@ -1,11 +1,3 @@
-<?php
-/**
- * User: Mathijs Nabbe
- * Date: 19-02-2020
- * Time: 14:33
- * File: header.php
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
