@@ -2,7 +2,7 @@
         <footer>
             <?php include "variabelen.php"; ?>
             <a href="../../../index.php">Terug naar index.php</a>
-            <p><?php echo "$name $year $hour" ?></p>
+            <p><?php echo "$name,  jaar $year, uur $hour" ?></p>
             <p>
                 <?php
                 if ($hour < "5")
