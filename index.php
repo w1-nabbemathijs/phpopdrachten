@@ -45,6 +45,18 @@
                     </ul>
                 </li>
             </ul>
+            <ul>
+                <li>Hoofdstuk 4
+                    <ul>
+                        <li>
+                            <a href="Periode_3/Hoofdstuk_4/4.1/opdracht4.1.php">Opdracht 4.1</a>
+                        </li>
+                        <li>
+                            <a href="Periode_3/Hoofdstuk_4/4.2/opdracht4.2.php">Opdracht 4.2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <main id="wrapper">
         </main>
