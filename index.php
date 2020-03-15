@@ -54,6 +54,12 @@
                         <li>
                             <a href="Periode_3/Hoofdstuk_4/4.2/opdracht4.2.php">Opdracht 4.2</a>
                         </li>
+                        <li>
+                            <a href="Periode_3/Hoofdstuk_4/4.3/opdracht4.3.php">Opdracht 4.3</a>
+                        </li>
+                        <li>
+                            <a href="Periode_3/Hoofdstuk_4/4.4/opdracht4.4.php">Opdracht 4.4</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
