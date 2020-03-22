@@ -1,7 +1,9 @@
-</div>
-        <footer>
+        </div>
+        <br>
+        <br>
+        <a href="../../../index.php">Terug naar index.php</a>
+        <footer style="background-color: black; color: white;">
             <?php include "variabelen.php"; ?>
-            <a href="../../../index.php">Terug naar index.php</a>
             <p><?php echo "$name,  jaar $year, uur $hour" ?></p>
             <p>
                 <?php
