@@ -39,14 +39,14 @@ foreach ($users as $username => $password)
         $div1Status = "hidden";
         $div2Status = "visible";
     }
-    else
+    else if ($inputUsername != NULL)
     {
         $message = "Username en/of password incorrect";
     }
 }
 
 //Valideren ingevoerde waardes
-if ($inputUsername == "" or $inputPassword == "")
+if ($inputUsername != NULL and ($inputUsername == "" or $inputPassword == ""))
 {
     $message = "Een veld is niet ingevuld";
 }
