@@ -81,6 +81,15 @@
                     </ul>
                 </li>
             </ul>
+            <ul>
+                <li>Eindopdracht P3
+                    <ul>
+                        <li>
+                            <a href="Periode_3/Eindopdracht/login.php">login.php</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <main id="wrapper">
         </main>
