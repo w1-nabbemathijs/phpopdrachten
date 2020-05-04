@@ -90,6 +90,18 @@
                     </ul>
                 </li>
             </ul>
+            <ul>
+                <li>Hoofdstuk 6
+                    <ul>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_6/6.1/opdracht6.1.php">Opdracht 6.1 (bleef hangen bij checklogin.php)</a>
+                        </li>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_6/6.2/opdracht6.2.php">Opdracht 6.2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <main id="wrapper">
         </main>
