@@ -28,8 +28,11 @@
     <?php
         session_start();
         //users aanmaken
-//        $_SESSION['user1'] = 0;
-//        $_SESSION['user2'] = 0;
+
+        if (isset($_SESSION['user1']) == false) {
+            $_SESSION[ 'user1' ] = 0;
+            $_SESSION[ 'user2' ] = 0;
+        }
 
         if (isset($_GET['keuze']))
         {
@@ -129,7 +132,8 @@
                 echo "$winnaar<br>";
                 echo "<h1 style='background-color: black; color: white'>Maak een nieuwe keuze om een nieuw spel te starten</h1>";
 
-                session_destroy();
+                //session_destroy();
+                unset($_SESSION['user1']);
             }
         }
     ?>
