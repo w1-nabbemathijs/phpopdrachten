@@ -102,6 +102,24 @@
                     </ul>
                 </li>
             </ul>
+            <ul>
+                <li>Hoofdstuk 7
+                    <ul>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_7/7.1/opdracht7.1.php">Opdracht 7.1</a>
+                        </li>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_7/7.2/opdracht7.2.php">Opdracht 7.2</a>
+                        </li>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_7/7.3/opdracht7.3.php">Opdracht 7.3</a>
+                        </li>
+                        <li>
+                            <a href="Periode_4/Hoofdstuk_7/7.4/opdracht7.4.php">Opdracht 7.4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <main id="wrapper">
         </main>
