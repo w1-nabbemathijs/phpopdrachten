@@ -86,6 +86,10 @@
         background-color: #d4ff00;
     }
 
+    .invisible_link {
+        display: none;
+    }
+
 </style>
 <div class="linkerhelft">
     <h1 class="page_title"><strong class="coers">COERS</strong> Server Checker:</h1>
@@ -260,6 +264,25 @@
             // aanmaken links
             $drive_link ='https://drive.google.com/drive/search?q='.$hostname.'';
 
+            if ($server == "server 11"){
+                $DA_Link = "http://server11.vdbc.nl:2222/";
+            }
+            elseif ($server == "server 10"){
+                $DA_Link = "http://server10.vdbc.nl:2222/";
+            }
+            elseif ($server == "server 17"){
+                $DA_Link = "http://server17.coersonline.nl:2222/";
+            }
+            elseif ($server == "server 14"){
+                $DA_Link = "http://server14.coersonline.nl:2222/";
+            }
+            elseif ($server == "coers 11"){
+                $DA_Link = "http://81.18.160.154:2222/";
+            }
+            else {
+                $DA_Link = "";
+                $visibility = "invisible_link";
+            }
 
             // Display results
             echo '
@@ -279,6 +302,11 @@
                     <tr class="borderless_cell">
                         <td colspan="2" class="borderless_cell">
                             <a class="drive_link" target="_blank" href="'.$drive_link.'">Google-Drive Tonen</a>
+                        </td>
+                    </tr>
+                    <tr class="borderless_cell '.$visibility.'">
+                        <td colspan="2" class="borderless_cell">
+                            <a class="drive_link" target="_blank" href="'.$DA_Link.'">Ga naar DirectAdmin</a>
                         </td>
                     </tr>
                 </table>
