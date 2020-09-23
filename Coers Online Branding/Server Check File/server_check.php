@@ -1,9 +1,11 @@
 <body style="text-align: center; background-color: black;">
 <style>
+
     h1.page_title {
         color: white;
         font-size: 50px;
         margin: 50px;
+        font-family: Arial;
     }
 
     strong.coers {
@@ -21,10 +23,15 @@
         color: white;
         width: 10vw;
         height: 5vw;
+        font-family: Arial;
     }
 
     th {
         font-size: 30px;
+    }
+
+    .borderless_cell {
+        border: none;
     }
 
     p.table_message {
@@ -34,10 +41,12 @@
         vertical-align: middle;
         color: black;
         padding-top: 2vw;
+        font-family: Arial;
     }
 
     h2.domain_checker {
         color: white;
+        font-family: Arial;
     }
 
     div.linkerhelft {
@@ -61,111 +70,125 @@
         height: auto;
         margin-bottom: 50px;
     }
+
+    a.drive_link {
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 150px;
+        padding: 15px;
+        border: solid 2px #d4ff00;
+        text-decoration: none;
+    }
+
+    a.drive_link:hover {
+        color: black;
+        background-color: #d4ff00;
+    }
+
 </style>
 <div class="linkerhelft">
     <h1 class="page_title"><strong class="coers">COERS</strong> Server Checker:</h1>
     <form action="" method="post">
-        <input type="submit" name="submit_server" value="Controleer server status" />
+        <input type="submit" name="submit_server" value="Refresh server status" />
     </form>
     <div>
         <?php
-        // controleer formulierwaarde
-        if ( isset( $_POST['submit_server'] ) ) {
 
-            //ping servers
-            $host_server11="81.18.160.88"; /*server 11 oud*/
-            $output_server11=shell_exec('ping -c 1 '.$host_server11);
-            if (strpos($output_server11, 'Unreachable') !== false) {
-                $server11status="<p class='table_message' style='background-color: red;'>Offline</p>";
-            }
-            elseif(strpos($output_server11, 'expired') !== false)
-            {
-                $server11status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
-            }
-            elseif(strpos($output_server11, 'data') !== false)
-            {
-                $server11status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
-            }
-            else
-            {
-                $server11status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
-            }
+        //ping servers
+        $host_server11="81.18.160.88"; /*server 11 oud*/
+        $output_server11=shell_exec('ping -c 1 '.$host_server11);
+        if (strpos($output_server11, 'Unreachable') !== false) {
+            $server11status="<p class='table_message' style='background-color: red;'>Offline</p>";
+        }
+        elseif(strpos($output_server11, 'expired') !== false)
+        {
+            $server11status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
+        }
+        elseif(strpos($output_server11, 'data') !== false)
+        {
+            $server11status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
+        }
+        else
+        {
+            $server11status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
+        }
 
-            $host_server10="81.18.160.86"; /*Server 10*/
-            $output_server10=shell_exec('ping -c 1 '.$host_server10);
-            if (strpos($output_server10, 'Unreachable') !== false) {
-                $server10status="<p class='table_message' style='background-color: red;'>Offline</p>";
-            }
-            elseif(strpos($output_server10, 'expired') !== false)
-            {
-                $server10status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
-            }
-            elseif(strpos($output_server10, 'data') !== false)
-            {
-                $server10status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
-            }
-            else
-            {
-                $server10status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
-            }
+        $host_server10="81.18.160.86"; /*Server 10*/
+        $output_server10=shell_exec('ping -c 1 '.$host_server10);
+        if (strpos($output_server10, 'Unreachable') !== false) {
+            $server10status="<p class='table_message' style='background-color: red;'>Offline</p>";
+        }
+        elseif(strpos($output_server10, 'expired') !== false)
+        {
+            $server10status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
+        }
+        elseif(strpos($output_server10, 'data') !== false)
+        {
+            $server10status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
+        }
+        else
+        {
+            $server10status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
+        }
 
-            $host_server17="81.18.160.110"; /*Server 17*/
-            $output_server17=shell_exec('ping -c 1 '.$host_server17);
-            if (strpos($output_server17, 'Unreachable') !== false) {
-                $server17status="<p class='table_message' style='background-color: red;'>Offline</p>";
-            }
-            elseif(strpos($output_server17, 'expired') !== false)
-            {
-                $server17status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
-            }
-            elseif(strpos($output_server17, 'data') !== false)
-            {
-                $server17status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
-            }
-            else
-            {
-                $server17status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
-            }
+        $host_server17="81.18.160.110"; /*Server 17*/
+        $output_server17=shell_exec('ping -c 1 '.$host_server17);
+        if (strpos($output_server17, 'Unreachable') !== false) {
+            $server17status="<p class='table_message' style='background-color: red;'>Offline</p>";
+        }
+        elseif(strpos($output_server17, 'expired') !== false)
+        {
+            $server17status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
+        }
+        elseif(strpos($output_server17, 'data') !== false)
+        {
+            $server17status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
+        }
+        else
+        {
+            $server17status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
+        }
 
-            $host_server14="81.18.160.131"; /*Server 14*/
-            $output_server14=shell_exec('ping -c 1 '.$host_server14);
-            if (strpos($output_server14, 'Unreachable') !== false) {
-                $server14status="<p class='table_message' style='background-color: red;'>Offline</p>";
-            }
-            elseif(strpos($output_server14, 'expired') !== false)
-            {
-                $server14status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
-            }
-            elseif(strpos($output_server14, 'data') !== false)
-            {
-                $server14status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
-            }
-            else
-            {
-                $server14status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
-            }
+        $host_server14="81.18.160.131"; /*Server 14*/
+        $output_server14=shell_exec('ping -c 1 '.$host_server14);
+        if (strpos($output_server14, 'Unreachable') !== false) {
+            $server14status="<p class='table_message' style='background-color: red;'>Offline</p>";
+        }
+        elseif(strpos($output_server14, 'expired') !== false)
+        {
+            $server14status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
+        }
+        elseif(strpos($output_server14, 'data') !== false)
+        {
+            $server14status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
+        }
+        else
+        {
+            $server14status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
+        }
 
-            $host_coers11="81.18.160.154"; /*Server 11 Nieuw*/
-            $output_coers11=shell_exec('ping -c 1 '.$host_coers11);
+        $host_coers11="81.18.160.154"; /*Server 11 Nieuw*/
+        $output_coers11=shell_exec('ping -c 1 '.$host_coers11);
 
-            if (strpos($output_coers11, 'Unreachable') !== false) {
-                $coers11status="<p class='table_message' style='background-color: red;'>Offline</p>";
-            }
-            elseif(strpos($output_coers11, 'expired') !== false)
-            {
-                $coers11status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
-            }
-            elseif(strpos($output_coers11, 'data') !== false)
-            {
-                $coers11status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
-            }
-            else
-            {
-                $coers11status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
-            }
+        if (strpos($output_coers11, 'Unreachable') !== false) {
+            $coers11status="<p class='table_message' style='background-color: red;'>Offline</p>";
+        }
+        elseif(strpos($output_coers11, 'expired') !== false)
+        {
+            $coers11status="<p class='table_message' style='background-color: orange;'>Timeout</p>";
+        }
+        elseif(strpos($output_coers11, 'data') !== false)
+        {
+            $coers11status="<p class='table_message' style='background-color: #D4FF00;'>Online</p>";
+        }
+        else
+        {
+            $coers11status="<p class='table_message' style='background-color: white;'>Unknown Error</p>";
+        }
 
-            // Display results
-            echo '
+        // Display results
+        echo '
                 <table>
                     <tr>
                         <th>Server 11</th>
@@ -193,8 +216,6 @@
                     </tr>
                 </table>
                 ';
-            //            exit;
-        }
         ?>
     </div>
 </div>
@@ -216,7 +237,7 @@
             // haal hostname door ping-command
             $ip = gethostbyname($hostname);
 
-            // zoek naar server-ip
+            // zoek naar server-ip en aanmaken links
             if ($ip == "81.18.160.88"){
                 $server = "server 11";
             }
@@ -236,6 +257,9 @@
                 $server = "Niet bij COERS";
             }
 
+            // aanmaken links
+            $drive_link ='https://drive.google.com/drive/search?q='.$hostname.'';
+
 
             // Display results
             echo '
@@ -251,6 +275,11 @@
                     <tr>
                         <th>Server:</th>
                         <td>'.$server.'</td>
+                    </tr>
+                    <tr class="borderless_cell">
+                        <td colspan="2" class="borderless_cell">
+                            <a class="drive_link" target="_blank" href="'.$drive_link.'">Google-Drive Tonen</a>
+                        </td>
                     </tr>
                 </table>
                 ';
