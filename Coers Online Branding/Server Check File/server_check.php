@@ -299,7 +299,7 @@
                         <th>Server:</th>
                         <td>'.$server.'</td>
                     </tr>
-                    <tr class="borderless_cell">
+                    <tr class="borderless_cell '.$visibility.'">
                         <td colspan="2" class="borderless_cell">
                             <a class="drive_link" target="_blank" href="'.$drive_link.'">Google-Drive Tonen</a>
                         </td>
